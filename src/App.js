@@ -30,8 +30,12 @@ to render() method React ke liye zaroori hai kyunki yahi method UI return karta 
 ////----------------------------code ---------------------------------///
 
 import { Component } from "react";
+
 class App extends Component {
-  constructor(props) {
+  constructor(props) {    // props ka use parent se child ko data bhejne ke liye hota hai.
+    constructor(props)    //constructor(props) me props pass karna zaroori hai, taki this.props accessible ho.
+                          // super(props) ka kaam parent class ka constructor call karna hai, 
+                          // taki this.props properly initialize
     super(props)
   }
   render() {
@@ -80,11 +84,11 @@ export class Paragraph extends Component {
 }
 
 export class InputField extends Component {
-  constructor (props){
+  constructor(props) {
     super(props)
   }
-  render(){
-    return(
+  render() {
+    return (
 
       <input type="date"></input>
     )
