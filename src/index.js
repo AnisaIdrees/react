@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App, { App2, Paragraph, InputField } from './App'
-// import App from './App';
+import Nav,{HeroSection} from './App'
+// import App, { App2, Paragraph, InputField,} from './App'
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -11,15 +12,17 @@ root.render(
 
   // <React.Fragment>
   <>
-    <App />
+    {/* <App />
     <App2 />
     <Paragraph />
-    <InputField />
+    <InputField /> */}
+    <Nav/>
+    {/* <App/> */}
 
-    <div>hello</div>
+    {/* <div>hello</div>
     <div>how are you</div>
     <div>I'm fine</div>
-    <div>WE are also fine</div>
+    <div>WE are also fine</div> */}
   </>
   // </React.Fragment>
   // </React.StrictMode>
@@ -30,3 +33,4 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+ 
