@@ -1,3 +1,4 @@
+import React from 'react'
 
 //------- class component -------//
 
@@ -122,6 +123,16 @@ function App (){
     name:'Aneesa',
     class:'1st year',
     age:17,
+  },
+  {
+    name:'madiha',
+    class:'9th',
+    age:15,
+  },
+  {
+    name:'owais',
+    class:'8th',
+    age:14,
   }]
   return(
 <div>
@@ -129,7 +140,7 @@ function App (){
   <ul>
     {
       aboutMe.map((ele , i )=> <li key={i}>
-        {ele.name} class:{ele.class}</li>)
+        {ele.name} </li>)
     }
   </ul>
   </div>
