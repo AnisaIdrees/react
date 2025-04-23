@@ -1,13 +1,21 @@
 import React from 'react';
 import ComponentB from './ComponentB'
-import {data} from '../App1';
+import { useContext } from 'react';
+import {data,theme} from '../App1';
 // import ComponentA from './ComponentA'
 
+
 const CompnentA = () => {
+const  dataContext =useContext(data)
+const themeContext = useContext(theme)
+
   return (
 <>
 <h1>Component A</h1>
-<ComponentB/>
+<h1>{dataContext.name}</h1>
+<h1>{dataContext.age}</h1>
+<h1>{theme}</h1>
+{/* <ComponentB/>
 <data.Consumer>
     {
         (user)=>(
@@ -18,7 +26,7 @@ const CompnentA = () => {
             </>
         )
     }
-</data.Consumer>
+</data.Consumer> */}
 
 </>
   )

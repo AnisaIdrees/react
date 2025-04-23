@@ -5,6 +5,7 @@ import {createContext} from 'react'
 
 // create 
 const data = createContext()
+const theme = createContext()
 
 const App1 = () => {
 
@@ -13,13 +14,16 @@ const user= {
      age:50,
      class:'11th'
 
-}    
+}  
+const themeMode='dark'  ;
   return (
     // provide 
  <>
  <data.Provider value={user}>
+<theme.Provider value={themeMode}>
 
  <ComponentA/>
+ </theme.Provider>
  </data.Provider>
 
 
@@ -29,4 +33,4 @@ const user= {
 }
 
 export default App1
-export {data}
+export {data,theme}
