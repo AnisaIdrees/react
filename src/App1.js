@@ -1,5 +1,5 @@
 import React from 'react'
-import CompnentA from './components/CompnentA'
+import ComponentA from './components/CompnentA'
 import {createContext} from 'react'
 
 
@@ -17,10 +17,10 @@ const user= {
   return (
     // provide 
  <>
- <data.provider value={user}>
+ <data.Provider value={user}>
 
- <CompnentA/>
- </data.provider>
+ <ComponentA/>
+ </data.Provider>
 
 
  </>   

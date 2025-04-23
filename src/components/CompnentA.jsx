@@ -8,15 +8,17 @@ const CompnentA = () => {
 <>
 <h1>Component A</h1>
 <ComponentB/>
-<data.consumer>
+<data.Consumer>
     {
-        ()=>(
+        (user)=>(
             <>
-            <h6>{data}</h6>
+            <h2>{user.name}</h2>
+            <h2>{user.age}</h2>
+            <h2>{user.class}</h2>
             </>
         )
     }
-</data.consumer>
+</data.Consumer>
 
 </>
   )
